@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        .stopwatch {
+            margin: 50px auto;
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            display: inline-block;
+        }
+
+        .timerDisplay {
+            font-size: 48px;
+            color: #333;
+        }
+
+        .buttons {
+            margin-top: 20px;
+        }
+
+        .btn {
+            font-size: 18px;
+            padding: 0; 
+            margin: 5px;
+            border: none;
+            border-radius: 70%; 
+            cursor: pointer;
+            transition: background-color 0.3s;
+            width: 50px; 
+            height: 50px;
+            line-height: 50px; 
+        }
+
+        #stopBtn {
+            background-color: red;
+            color: white;
+        }
+
+        #startBtn {
+            background-color: rgb(8, 194, 39);
+            color: white;
+        }
+
+        #resetBtn {
+            background-color: rgba(223, 150, 14, 0.63); 
+            color: white;
+            border-radius: 70%; 
+            width: 50px;
+            height: 50px;
+            line-height: 50px; 
+        }
+
+        .btn:hover {
+            background-color: #555;
+        }
+    </style>
+    <title>Stopwatch</title>
+</head>
+<body>
+    <div class="stopwatch">
+        <div class="timerDisplay">00 : 00 : 00</div>
+    </div>
+
+    <div class="buttons">
+        <button id="stopBtn" class="btn">Stop</button>
+        <button id="startBtn" class="btn">Start</button>
+        <button id="resetBtn" class="btn">Reset</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
